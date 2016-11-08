@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	var server = 'http://localhost:3000';
 	
+	//array of cars
 	var cars = [{id:2349, make:"Renault", owner:"Vasiliy Ivancev", phone:"+380504258324", arriveDate: '2016-11-01', departureDate: '2016-11-03'},
 	{id:3467, make:"Volvo", owner:"Petro Schevcev", phone:"+38050934533", arriveDate: '2016-10-13', departureDate: '2016-10-14'},
 	{id:6781, make:"VW", owner:"Sergiy Fedotov", phone:"+380504259388", arriveDate: '2016-10-16', departureDate: '2016-10-21'},
@@ -9,7 +10,7 @@ $(document).ready(function(){
 	{id:2349, make:"Lada", owner:"Andrii Slovian", phone:"+380994338374", arriveDate: '2016-11-06', departureDate: '2016-11-07'}];
 	
 	$('#button').on('click', function() {
-		$.post(server + '/users', {data: JSON.stringify(cars)}, function(data) {
+		$.post(server + '/users', {data: JSON.stringify(cars)}, function(data) { //post request on server
 			for(var i = 0; i < cars.length; i++){
 				var $park ="";
 				var $tr = $("<tr></tr>");

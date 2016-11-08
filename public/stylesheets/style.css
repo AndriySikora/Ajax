@@ -1,0 +1,50 @@
+*{
+	margin:0;
+	padding:0;
+}
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.main-container{
+	width:  auto;
+	height: auto;
+	width: auto;
+	margin-top: 10px;
+}
+h2{
+	text-align: center;
+}
+table, th, td{
+	margin-top: 20px;
+	border: 1px solid grey;
+	text-align: center;
+}
+th{
+	height: 40px;
+}
+td{
+	height: 25px;
+}
+table{
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+}
+.active{
+	background-color: lightgrey;
+}
+.hidden{
+	display: none;
+}
+.show{
+	visibility: visible;
+}
+#button, #removeBtn{
+	width: 90px;
+	height: 20px;
+}
